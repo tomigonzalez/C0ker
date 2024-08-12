@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Uzusi";
+  src: url("../public/fonts/usuzi.ttf");
+}
+
+:root {
+  font-family: "Uzusi";
+  font-size: 2rem;
+}
