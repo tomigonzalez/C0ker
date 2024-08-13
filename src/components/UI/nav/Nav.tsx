@@ -1,10 +1,14 @@
 import { HiMenuAlt3 } from "react-icons/hi";
+import CircleRec from "./circleRec/CircleRec";
 
 const Nav = () => {
   return (
     <nav className="w-full h-12  flex flex-col items-center bg-cover bg-center bg-gray-to-transparent">
       <div className="w-11/12 h-full flex flex-row justify-between items-center">
-        <div className="w-1/4">
+        <div className="w-1/4 flex">
+          <div className="w-3.5">
+            <CircleRec />
+          </div>
           <h3>ONLINE</h3>
         </div>
         <div className="w-1/4 h-full flex flex-col items-center justify-center">
