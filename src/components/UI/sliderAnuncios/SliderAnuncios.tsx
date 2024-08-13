@@ -1,16 +1,16 @@
 import "../sliderAnuncios/SliderAnunciosStyle.css";
 
 type Props = {
-  sliderText: string;
+  data: string[];
 };
 
 const SliderAnuncios = (props: Props) => {
   return (
-    <div className="slider">
-      <div className="slide-track">
-        <div className="slide">
-          <h3>{props.sliderText}</h3>
-        </div>
+    <div className="flex h-6 w-screen slider bg-cuarto-gray text-white overflow-hidden">
+      <div className="slide-track autoplay">
+        {props.data.map((item) => (
+          <div className="slide">{item}</div>
+        ))}
       </div>
     </div>
   );

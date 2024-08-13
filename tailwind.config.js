@@ -11,6 +11,7 @@ export default {
         "primary-white": "#efebdf",
         "secondary-orange": "#f3630e",
         "tertiary-black": "#282927",
+        "cuarto-gray": "#5A5955",
       },
     },
   },
