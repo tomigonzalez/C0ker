@@ -1,0 +1,79 @@
+.cards .cardss figcaption,
+.cards .cardss:after {
+  position: absolute;
+}
+
+.cards .cardss {
+  position: relative;
+}
+
+.df,
+.cards,
+.news {
+  display: flex;
+}
+
+.cards {
+  flex-flow: row wrap;
+}
+.cards .cardss {
+  margin: 20px;
+
+  overflow: hidden;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  transition: 0.3s;
+}
+.cards .cardss img {
+  width: 100%;
+  min-height: 100%;
+}
+.cards .cardss figcaption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background: none;
+  color: #fff;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+.cards .cardss:after {
+  content: "";
+  z-index: 10;
+  width: 200%;
+  height: 100%;
+  top: -90%;
+  left: -20px;
+  opacity: 0.1;
+  transform: rotate(45deg);
+  background: linear-gradient(
+    to top,
+    transparent,
+    #fff 60%,
+    rgba(255, 255, 255, 0.8)
+  );
+  transition: 0.3s;
+}
+.cards .cardss:hover,
+.cards .cardss:focus,
+.cards .cardss:active {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+  transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+.cards .cardss:hover figcaption,
+.cards .cardss:focus figcaption,
+.cards .cardss:active figcaption {
+  transform: none;
+}
+.cards .cardss:hover:after,
+.cards .cardss:focus:after,
+.cards .cardss:active:after {
+  transform: rotate(25deg);
+  top: -40%;
+  opacity: 0.15;
+}

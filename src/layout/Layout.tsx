@@ -7,11 +7,11 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <section className="w-full h-screen bg-primary-white flex flex-col items-center text-tertiary-black">
+    <article className="w-full h-full bg-primary-white flex flex-col items-center text-tertiary-black">
       <Nav></Nav>
       {children}
       <Footer></Footer>
-    </section>
+    </article>
   );
 };
 
