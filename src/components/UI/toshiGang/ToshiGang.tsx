@@ -19,8 +19,8 @@ type Props = {
 const ToshiGang = (props: Props) => {
   return (
     <section className="w-11/12 h-full flex flex-row justify-evenly">
-      {props.toshi.map((item) => (
-        <div className="m-8">
+      {props.toshi.map((item, index) => (
+        <div className="m-8" key={index}>
           <div className="w-32 h-32 cards">
             <figure className="cardss">
               <img className="w-full h-full" src={item.img} />
