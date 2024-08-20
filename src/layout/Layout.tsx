@@ -11,10 +11,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    console.log(isOpen);
   };
   return (
     <article className="w-full h-full bg-primary-white flex flex-col items-center text-tertiary-black">
-      <Nav></Nav>
+      <Nav toggleMenu={toggleMenu} isOpen={isOpen}></Nav>
       {children}
       <Footer></Footer>
     </article>

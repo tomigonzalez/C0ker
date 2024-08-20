@@ -1,7 +1,13 @@
 import { HiMenuAlt3 } from "react-icons/hi";
 import CircleRec from "./circleRec/CircleRec";
 
-const Nav = () => {
+import ModalMenu from "./modalMenu/ModalMenu";
+
+type Props = {
+  isOpen: boolean;
+  toggleMenu: () => void;
+};
+const Nav = (props: Props) => {
   return (
     <nav className="w-full h-12  flex flex-col items-center bg-cover bg-center bg-gray-to-transparent">
       <div className="w-11/12 h-full flex flex-row justify-between items-center">
@@ -23,9 +29,12 @@ const Nav = () => {
           <h1 className="text-xs">C0KER</h1>
         </div>
         <div className="w-1/4 flex flex-row justify-end">
-          <HiMenuAlt3 size={35} className="" />
+          <button onClick={props.toggleMenu}>
+            <HiMenuAlt3 size={35} />
+          </button>
         </div>
       </div>
+      {props.isOpen && <ModalMenu toggleMenu={props.toggleMenu} />}
     </nav>
   );
 };
