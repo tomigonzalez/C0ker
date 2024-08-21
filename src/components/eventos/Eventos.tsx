@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const Eventos = (props: Props) => {
+const Eventos = () => {
   return <div>Eventos</div>;
 };
 

@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const ChallengeSemanal = (props: Props) => {
+const ChallengeSemanal = () => {
   return <div></div>;
 };
 

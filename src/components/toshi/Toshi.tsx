@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const Toshi = (props: Props) => {
+const Toshi = () => {
   return <div>Toshi</div>;
 };
 

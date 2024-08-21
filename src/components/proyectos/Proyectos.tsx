@@ -2,7 +2,7 @@ import SliderAnuncios from "../UI/sliderAnuncios/SliderAnuncios";
 import { crosby, crosbyRelojes, eclipse } from "../../data/Anuncios";
 import CardProduct from "../UI/cardProduct/CardProduct";
 
-const Proyectos = (props: Props) => {
+const Proyectos = () => {
   const data = crosby;
   const dataFiesta = eclipse;
   const relojes = crosbyRelojes;
