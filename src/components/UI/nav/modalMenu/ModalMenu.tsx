@@ -14,7 +14,11 @@ const ModalMenu = (props: Props) => {
             <ul className=" flex flex-col justify-center text-center font-usuzi gap-4">
               {routes.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.path} className=" text-xs">
+                  <Link
+                    to={item.path}
+                    className=" text-xs"
+                    onClick={props.toggleMenu}
+                  >
                     {item.nombre && (
                       <h1 className="font-uzusi hover:text-secondary-orange">
                         {item.nombre}
