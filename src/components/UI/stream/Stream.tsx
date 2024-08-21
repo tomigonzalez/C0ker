@@ -4,7 +4,7 @@ const Stream = () => {
       <div className="w-4/5  bg-black h-64 rounded-xl shadow shadow-black">
         <img
           className="w-full h-full rounded-xl "
-          src="../public/assets/bannerC0ker.jpg"
+          src="assets/bannerC0ker.jpg"
         />
       </div>
     </div>

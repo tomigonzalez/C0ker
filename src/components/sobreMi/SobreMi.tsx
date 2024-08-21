@@ -3,7 +3,7 @@ const SobreMi = () => {
     <div className="w-11/12 flex flex-col gap-4 ">
       <div className="flex flex-row w-full gap-14">
         <img
-          src="public/assets/c0kersobremi2.png"
+          src="assets/c0kersobremi2.png"
           className="rounded-2xl  shadow-lg"
           alt="C0ker"
         />
@@ -26,14 +26,14 @@ const SobreMi = () => {
           </p>{" "}
         </div>
         <img
-          src="public/assets/c0kersobremi.png"
+          src="assets/c0kersobremi.png"
           className="rounded-2xl  shadow-lg"
           alt="C0ker"
         />
       </div>
       <div className="flex flex-row w-full gap-14">
         <img
-          src="public/assets/c0kersobremi1.png"
+          src="assets/c0kersobremi1.png"
           className="rounded-2xl  shadow-lg "
           alt="C0ker"
         />

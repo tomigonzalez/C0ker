@@ -21,7 +21,7 @@ const Nav = (props: Props) => {
             <div className="h-7 w-7">
               <img
                 className="w-full h-full"
-                src="public/assets/c0ker.png"
+                src="assets/c0ker.png"
                 alt="C0kerrrr"
                 title="C0kerrrr"
               />
