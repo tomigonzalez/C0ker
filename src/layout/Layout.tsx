@@ -16,7 +16,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <article className="w-full h-full bg-primary-white flex flex-col items-center text-tertiary-black">
       <Nav toggleMenu={toggleMenu} isOpen={isOpen}></Nav>
-      {children}
+      <section className="w-full flex flex-col items-center mt-14 mb-4">
+        {children}
+      </section>
       <Footer></Footer>
     </article>
   );

@@ -21,7 +21,7 @@ const Home = () => {
     .slice(0, 2);
 
   return (
-    <section className="w-full flex flex-col items-center">
+    <>
       <Stream />
       <h2 className="text-xs mt-6 mb-6">Anuncios</h2>
       <SliderAnuncios data={data} />
@@ -33,7 +33,7 @@ const Home = () => {
       </Suspense>
       <h2 className="text-xs mt-4 mb-4">Toshi Gang</h2>
       <ToshiGang toshi={toshi} />
-    </section>
+    </>
   );
 };
 

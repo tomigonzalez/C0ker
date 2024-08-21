@@ -13,7 +13,7 @@ type Props = {
 
 const CardProduct = (props: Props) => {
   return (
-    <ul className="w-11/12 h-full flex flex-row justify-center">
+    <ul className="w-11/12 h-full flex flex-row justify-center uls">
       {props.relojes.map((item) => (
         <li key={item.id}>
           <section className="product-container product-3">

@@ -11,7 +11,19 @@ export const crosby = [
   "CROSBY.COM.AR",
   "CROSBY.COM.AR",
 ];
-
+export const eclipse = [
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+  "ECLIPSE.TECHNO",
+];
 export const crosbyRelojes = [
   {
     id: 1,

@@ -20,7 +20,7 @@ const YoutubeVideos = (props: YoutubeVideosProps) => {
           return (
             <figure
               key={video.id}
-              className="w-[43%] relative cursor-pointer rounded-lg overflow-hidden grid transition-transform duration-500 transform hover:scale-110 hover:shadow-lg"
+              className="w-[43%] relative cursor-pointer rounded-lg overflow-hidden grid transition-transform duration-500 transform hover:scale-110 shadow-lg"
             >
               <a
                 href={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}

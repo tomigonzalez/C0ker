@@ -44,8 +44,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col">
-          <ul className="flex flex-col text-[0.4rem] font-uzusi">
+        <div className="flex flex-col justify-center">
+          <ul className="flex flex-col gap-[0.3rem] text-[0.4rem] font-uzusi ">
             <li className=" hover:text-secondary-orange">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 INICIO
