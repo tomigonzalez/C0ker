@@ -39,7 +39,7 @@ const AtroposFichas = () => {
         </li>
 
         <li>
-          <img src=".assets/fichas/ficha5.png"></img>
+          <img src="assets/fichas/ficha5.png"></img>
         </li>
 
         <li>
