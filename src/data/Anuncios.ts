@@ -47,6 +47,15 @@ export const crosbyRelojes = [
 
 export const toshiGang = [
   {
+    id: 4,
+    ig: "https://www.instagram.com/c0ker_/?hl=es",
+    twitch: "https://www.twitch.tv/c0ker",
+    kick: "https://kick.com/c0ker",
+    img: "assets/c0ker.png",
+    name: "C0ker",
+    desc: "",
+  },
+  {
     id: 1,
     ig: "https://www.instagram.com/gonzalp__/",
     twitch: "https://www.twitch.tv/gonzalp",
@@ -71,6 +80,26 @@ export const toshiGang = [
     kick: "https://kick.com/fieraa",
     img: "assets/fiera.png",
     name: "Fieraa",
+    desc: "",
+  },
+];
+export const eclipseImg = [
+  {
+    id: 1,
+    url: "assets/eclipse1.png",
+    name: "ECLIPSE",
+    desc: "",
+  },
+  {
+    id: 2,
+    url: "assets/eclipse2.png",
+    name: "ECLIPSE",
+    desc: "",
+  },
+  {
+    id: 3,
+    url: "assets/eclipse3.png",
+    name: "ECLIPSE",
     desc: "",
   },
 ];

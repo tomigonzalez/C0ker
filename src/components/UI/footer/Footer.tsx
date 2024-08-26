@@ -2,6 +2,7 @@ import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { IoDocumentAttachOutline } from "react-icons/io5";
 import { RiKickLine, RiTiktokLine } from "react-icons/ri";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -47,29 +48,29 @@ const Footer = () => {
         <div className="flex flex-col justify-center">
           <ul className="flex flex-col gap-[0.3rem] text-[0.4rem] font-uzusi ">
             <li className=" hover:text-secondary-orange">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to="/" rel="noopener noreferrer">
                 INICIO
-              </a>
+              </Link>
             </li>
             <li className=" hover:text-secondary-orange">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to="sobremi" rel="noopener noreferrer">
                 SOBRE MI
-              </a>
+              </Link>
             </li>
             <li className=" hover:text-secondary-orange">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to="proyectos" rel="noopener noreferrer">
                 PROYECTOS
-              </a>
+              </Link>
             </li>
             <li className=" hover:text-secondary-orange">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to="contenido" rel="noopener noreferrer">
                 CONTENIDO
-              </a>
+              </Link>
             </li>
             <li className=" hover:text-secondary-orange">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to="toshi" rel="noopener noreferrer">
                 TOSHI
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

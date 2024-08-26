@@ -1,12 +1,10 @@
 import { Suspense } from "react";
-import { toshiGang } from "../../data/Anuncios";
+import Stream from "../UI/stream/Stream";
+import YoutubeVideos from "../UI/youtube/YoutubeVideos";
 import { VideoItem } from "../../types/types";
 import { apiDat } from "../../utils/utils";
-import ToshiGang from "../UI/toshiGang/ToshiGang";
-import YoutubeVideos from "../UI/youtube/YoutubeVideos";
 
-const Toshi = () => {
-  const toshi = toshiGang;
+const Contenido = () => {
   const dataYoutube = apiDat.read();
 
   const filteredItems = dataYoutube.items
@@ -14,14 +12,16 @@ const Toshi = () => {
     .slice(0, 2);
   return (
     <>
-      <h2 className="text-xs mt-4 mb-4">Toshi Gang</h2>
-      <ToshiGang toshi={toshi} />
-      <h2 className="text-xs mt-4 mb-4">Max Win</h2>
+      <h2 className="text-xs ">Contenido</h2>
+      <Stream />
+      <h2 className="text-xs mt-6 mb-6">Youtube </h2>
       <Suspense fallback={<div>loading</div>}>
         <YoutubeVideos filteredItems={filteredItems} />
       </Suspense>
+      <h2 className="text-xs ">CHALLENGE</h2>
+      <Stream />
     </>
   );
 };
 
-export default Toshi;
+export default Contenido;

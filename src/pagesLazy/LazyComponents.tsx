@@ -8,6 +8,6 @@ export const Proyectos = React.lazy(
   () => import("../components/proyectos/Proyectos")
 );
 export const Eventos = React.lazy(
-  () => import("../components/eventos/Eventos")
+  () => import("../components/contenido/Contenido")
 );
 export const Toshi = React.lazy(() => import("../components/toshi/Toshi"));

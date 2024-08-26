@@ -1,4 +1,5 @@
-import { Home, SobreMi, Proyectos, Eventos, Toshi } from "./LazyComponents";
+import Contenido from "../components/contenido/Contenido";
+import { Home, SobreMi, Proyectos, Toshi } from "./LazyComponents";
 
 export const routes = [
   {
@@ -17,9 +18,9 @@ export const routes = [
     element: <Proyectos />,
   },
   {
-    path: "/eventos",
-    nombre: "EVENTOS",
-    element: <Eventos />,
+    path: "/contenido",
+    nombre: "CONTENIDO",
+    element: <Contenido />,
   },
   {
     path: "/toshi",
