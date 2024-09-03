@@ -33,6 +33,8 @@ const EclipseGalery = (props: Props) => {
                 <div
                   className="h-3/2 w-full rounded-lg overflow-hidden shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
                   onClick={() => handleImageClick(item.url)}
+                  data-aos-delay={index * 100}
+                  data-aos="fade-out"
                 >
                   <img
                     src={item.url}
@@ -54,6 +56,8 @@ const EclipseGalery = (props: Props) => {
               <div
                 onClick={() => handleImageClick(item.url)}
                 className="w-[300px] h-full flex flex-col  rounded-lg overflow-hidden shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+                data-aos-delay={index * 100}
+                data-aos="fade-out"
               >
                 <img src={item.url} className="w-full h-full bg-cover" />
               </div>

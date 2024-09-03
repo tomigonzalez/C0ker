@@ -19,7 +19,6 @@ const Contenido = () => {
         <YoutubeVideos filteredItems={filteredItems} />
       </Suspense>
       <h2 className="text-xs ">CHALLENGE</h2>
-      <Stream />
     </>
   );
 };

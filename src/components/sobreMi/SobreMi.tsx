@@ -6,6 +6,7 @@ const SobreMi = () => {
           src="assets/c0kersobremi2.png"
           className="rounded-2xl  shadow-lg"
           alt="C0ker"
+          data-aos="fade-in"
         />
         <div className=" text-xs content-center">
           <p className=" h-1/2 ">
@@ -29,6 +30,7 @@ const SobreMi = () => {
           src="assets/c0kersobremi.png"
           className="rounded-2xl  shadow-lg"
           alt="C0ker"
+          data-aos="fade-in"
         />
       </div>
       <div className="flex flex-row w-full gap-14">
@@ -36,6 +38,7 @@ const SobreMi = () => {
           src="assets/c0kersobremi1.png"
           className="rounded-2xl  shadow-lg "
           alt="C0ker"
+          data-aos="fade-in"
         />
         <div className="text-xs content-center">
           <p className=" h-1/2">

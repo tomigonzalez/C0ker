@@ -3,6 +3,18 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        show: {
+          "0%": {
+            opacity: 0,
+            transform: "scale(0.25)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "scale(1)",
+          },
+        },
+      },
       fontFamily: {
         uzusi: ["Uzusi", "sans-serif"], // Usa minúsculas para las claves y especifica la fuente en la lista
       },

@@ -16,7 +16,11 @@ const CardProduct = (props: Props) => {
     <ul className="w-11/12 h-full flex flex-row justify-center uls">
       {props.relojes.map((item) => (
         <li key={item.id}>
-          <section className="product-container product-3">
+          <section
+            className="product-container product-3"
+            data-aos="fade-up"
+            data-aos-delay={item.id * 100}
+          >
             <div className="card">
               <div className="photo">
                 <img src={item.url} alt="product" />

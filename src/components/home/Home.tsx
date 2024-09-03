@@ -24,13 +24,18 @@ const Home = () => {
     <>
       <Stream />
       <h2 className="text-xs mt-6 mb-6">Anuncios</h2>
+
       <SliderAnuncios data={data} />
+
       <CardProduct relojes={relojes}></CardProduct>
+
       {/* <h2 className="text-xs">Challenge semanal</h2> */}
       <h2 className="text-xs mt-6 mb-6">Youtube</h2>
+
       <Suspense fallback={<div>loading</div>}>
         <YoutubeVideos filteredItems={filteredItems} />
       </Suspense>
+
       <h2 className="text-xs mt-4 mb-4">Toshi Gang</h2>
       <ToshiGang toshi={toshi} />
     </>

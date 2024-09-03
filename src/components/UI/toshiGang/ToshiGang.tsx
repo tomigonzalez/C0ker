@@ -2,6 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 import { IoLogoTwitch } from "react-icons/io5";
 import { RiKickLine } from "react-icons/ri";
 import "../toshiGang/ToshiGangStyle.css";
+
 type Product = {
   id: number;
   ig: string;
@@ -20,8 +21,13 @@ const ToshiGang = (props: Props) => {
   return (
     <section className="w-11/12 h-full flex flex-wrap justify-evenly">
       {props.toshi.map((item, index) => (
-        <div className="m-6" key={index}>
-          <div className="w-32 h-32 cards">
+        <div
+          className="m-6"
+          key={index}
+          data-aos="fade-up"
+          data-aos-delay={index * 100}
+        >
+          <div className="w-28 h-28 cards">
             <figure className="cardss">
               <img className="w-full h-full" src={item.img} />
             </figure>
