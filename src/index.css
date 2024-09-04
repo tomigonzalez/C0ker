@@ -11,3 +11,6 @@
   font-family: "Uzusi";
   font-size: 2rem;
 }
+section {
+  scrollbar-color: #f3630e;
+}

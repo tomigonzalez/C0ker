@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     Aos.init({
       duration: 1000, // Duración de la animación en milisegundos
       offset: 200, // Distancia en píxeles desde el fondo antes de activar la animación
-      once: false, // Si `true`, la animación solo ocurre una vez al hacer scroll
+      once: true, // Si `true`, la animación solo ocurre una vez al hacer scroll
     });
   }, []);
   return (
