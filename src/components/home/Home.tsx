@@ -30,13 +30,13 @@ const Home = () => {
       <CardProduct relojes={relojes}></CardProduct>
 
       {/* <h2 className="text-xs">Challenge semanal</h2> */}
-      <h2 className="text-xs mt-6 mb-6">Youtube</h2>
+      <h2 className="text-xs xl:mt-6 xl:mb-6 mt-3 mb-2">Youtube</h2>
 
       <Suspense fallback={<div>loading</div>}>
         <YoutubeVideos filteredItems={filteredItems} />
       </Suspense>
 
-      <h2 className="text-xs mt-4 mb-4">Toshi Gang</h2>
+      <h2 className="text-xs xl:mt-4 xl:mb-4 mt-3 mb-0">Toshi Gang</h2>
       <ToshiGang toshi={toshi} />
     </>
   );

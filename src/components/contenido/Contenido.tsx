@@ -3,6 +3,7 @@ import Stream from "../UI/stream/Stream";
 import YoutubeVideos from "../UI/youtube/YoutubeVideos";
 import { VideoItem } from "../../types/types";
 import { apiDat } from "../../utils/utils";
+import EnConstruccion from "../UI/enConstruccion/enConstruccion";
 
 const Contenido = () => {
   const dataYoutube = apiDat.read();
@@ -19,6 +20,7 @@ const Contenido = () => {
         <YoutubeVideos filteredItems={filteredItems} />
       </Suspense>
       <h2 className="text-xs ">CHALLENGE</h2>
+      <EnConstruccion />
     </>
   );
 };

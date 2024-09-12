@@ -1,59 +1,40 @@
 import { formatDistanceToNow } from "date-fns";
 import { VideoItem } from "../../../types/types";
 import { es } from "date-fns/locale";
-
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
 interface YoutubeVideosProps {
   filteredItems: VideoItem[];
 }
 
 const YoutubeVideos = (props: YoutubeVideosProps) => {
   return (
-    <section className="w-11/12 h-full flex flex-row justify-evenly mt-6 mb-6">
-      <div className="w-full flex flex-row justify-around ">
+    <section className="w-11/12 h-full  flex flex-row justify-evenly mt-6 mb-6">
+      <div className="w-full xl:flex-row xl:gap-0  lg:gap-0 lg:flex-row  items-center gap-6 flex flex-col justify-around ">
         {props.filteredItems.map((video: VideoItem) => {
           const publishedAt = new Date(video.snippet.publishedAt);
+
           const relativeTime = formatDistanceToNow(publishedAt, {
             addSuffix: true,
             locale: es,
           });
 
           return (
-            <figure
-              key={video.id}
-              className="w-[43%] relative cursor-pointer rounded-lg overflow-hidden grid transition-transform duration-500 transform hover:scale-110 shadow-lg"
-              data-aos="zoom-out"
-            >
-              <a
-                href={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="w-full h-auto"
-                  src={video.snippet.thumbnails.maxres.url}
-                  alt={video.snippet.title}
-                />
-                <div className="absolute font-[arial] font-bold top-2 left-2 text-[0.4rem] text-primary-white bg-black bg-opacity-50 rounded px-1 py-0">
-                  {relativeTime.toUpperCase()}
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-white opacity-80 hover:opacity-100"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M3 22V2l18 10-18 10z" />
-                  </svg>
-                </div>
-                <figcaption className="absolute bottom-0 w-full text-white font-bold text-2xl pl-3 pr-3 bg-black bg-opacity-60 transition-transform duration-400 clip-text mask-mask-composite-xor hover:clip-text-inset-0">
-                  <h5 className="text-xs">{video.snippet.title}</h5>
-                  <h3 className="text-[0.5rem] font-[arial] flex justify-end ">
-                    @C0ker
-                  </h3>
-                </figcaption>
-              </a>
-            </figure>
+            <div className=" xl:w-[43%] lg:w-[43%] w-[80%] relative cursor-pointer rounded-lg overflow-hidden grid transition-transform duration-500 transform hover:scale-105 ">
+              <LiteYouTubeEmbed
+                id={video.snippet.resourceId.videoId}
+                title={video.snippet.title}
+                poster={"maxresdefault"}
+              ></LiteYouTubeEmbed>
+              <div className="absolute font-[arial] font-bold top-2 left-2 text-[0.4rem] text-primary-white bg-black bg-opacity-50 rounded px-1 py-0">
+                {relativeTime.toUpperCase()}
+              </div>
+              <div className="absolute bottom-0 text-white font-bold text-2xl pl-3 pr-3 right-1  ">
+                <h3 className="text-[0.5rem] font-[arial] flex justify-end ">
+                  @C0ker
+                </h3>
+              </div>
+            </div>
           );
         })}
       </div>

@@ -1,6 +1,6 @@
 const Stream = () => {
   return (
-    <div className="w-4/5 flex justify-center ">
+    <div className="xl:w-4/5 w-[100%] flex justify-center ">
       <div className="w-4/5 relative " style={{ paddingBottom: "46.25%" }}>
         <iframe
           src="https://player.kick.com/c0ker"

@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className=" w-full h-full bg-cover bg-center bg-transparent-to-gray flex flex-row justify-center">
-      <div className="w-11/12 h-full flex flex-row justify-between">
+      <div className="w-11/12 h-full flex xl:flex-row xl:justify-between lg:flex-row lg:justify-between md:flex-row md:justify-between sm:flex-col flex-col  items-center">
         <div className="flex flex-col m-2">
-          <h1 className="text-4xl text-secondary-orange">C0ker</h1>
+          <h1 className=" text-4xl text-secondary-orange">C0ker</h1>
           <div className="flex flex-row justify-between">
             <a
               href="https://www.instagram.com/c0ker_/?hl=es"
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-          <ul className="flex flex-col gap-[0.3rem] text-[0.4rem] font-uzusi ">
+          <ul className="flex flex-col gap-[0.3rem] font-uzusi xl:text-[0.4rem] xl:items-start sm:text-[0.5rem] md:items-start lg:items-start items-center  text-[0.55rem]">
             <li className=" hover:text-secondary-orange">
               <Link to="/" rel="noopener noreferrer">
                 INICIO

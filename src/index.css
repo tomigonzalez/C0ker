@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Uzusi";
-  src: url("../public/fonts/usuzi.ttf");
+  src: url("/fonts/usuzi.ttf");
 }
 
 :root {
