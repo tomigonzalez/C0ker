@@ -1,5 +1,5 @@
 import { toshiGang } from "../../data/Anuncios";
-import EnConstruccion from "../UI/enConstruccion/enConstruccion";
+import EnConstruccion from "../UI/enConstruccion/EnConstruccion";
 
 import ToshiGang from "../UI/toshiGang/ToshiGang";
 

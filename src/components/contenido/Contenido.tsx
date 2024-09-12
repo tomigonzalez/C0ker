@@ -3,7 +3,7 @@ import Stream from "../UI/stream/Stream";
 import YoutubeVideos from "../UI/youtube/YoutubeVideos";
 import { VideoItem } from "../../types/types";
 import { apiDat } from "../../utils/utils";
-import EnConstruccion from "../UI/enConstruccion/enConstruccion";
+import EnConstruccion from "../UI/enConstruccion/EnConstruccion";
 
 const Contenido = () => {
   const dataYoutube = apiDat.read();
