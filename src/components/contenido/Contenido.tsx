@@ -15,7 +15,9 @@ const Contenido = () => {
     <>
       <h2 className="text-xs ">Contenido</h2>
       <Stream />
-      <h2 className="text-xs mt-6 mb-6">Youtube </h2>
+      <h2 className="text-xs xl:mt-6 lg:mt-6 xl:mb-6 lg:mb-6 mb-2 mt-2">
+        Youtube{" "}
+      </h2>
       <Suspense fallback={<div>loading</div>}>
         <YoutubeVideos filteredItems={filteredItems} />
       </Suspense>
