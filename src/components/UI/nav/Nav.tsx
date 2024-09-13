@@ -36,11 +36,11 @@ const Nav = (props: Props) => {
         }`}
       >
         <div className="w-11/12  h-full flex flex-row justify-between items-center">
-          <div className="w-1/4 flex xl:text-[1rem] sm:text-[0.9rem] text-[0.6rem]">
+          <div className="w-1/4 flex xl:text-[0.95rem] sm:text-[0.9rem] text-[0.6rem]">
             <div className="w-3.5">
               <CircleRec />
             </div>
-            <h3>ONLINE</h3>
+            <h3>NLINE</h3>
           </div>
           <div className="w-1/4 h-full flex flex-col items-center justify-center xl:text-xs sm:text-[0.7rem] text-[0.6rem]">
             <div className="h-7 w-7">
