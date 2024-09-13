@@ -74,14 +74,14 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col self-end p-6">
-          <p className="text-[0.5rem] font-sans m-0">Powered by</p>
+        <div className="flex flex-col self-end xl:p-6 lg:p-6 p-1">
+          <p className="text-[0.4rem] font-sans m-0">Powered by</p>
           <a
             href="https://portafolio-indol.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className="text-xl text-tertiary-black m-0  hover:text-secondary-orange">
+            <h2 className="text-[1rem] text-tertiary-black m-0  hover:text-secondary-orange">
               TMGC
             </h2>
           </a>
