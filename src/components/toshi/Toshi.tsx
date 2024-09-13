@@ -10,6 +10,8 @@ const Toshi = () => {
     <>
       <h2 className="text-xs mt-4 mb-4">Toshi Gang</h2>
       <ToshiGang toshi={toshi} />
+      <h2 className="text-xs mt-4 mb-4">Max Wins</h2>
+      <EnConstruccion />
       <h2 className="text-xs mt-4 mb-4">Toshi eventos</h2>
       <EnConstruccion />
     </>

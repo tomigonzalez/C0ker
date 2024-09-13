@@ -19,7 +19,7 @@ const Contenido = () => {
       <Suspense fallback={<div>loading</div>}>
         <YoutubeVideos filteredItems={filteredItems} />
       </Suspense>
-      <h2 className="text-xs ">CHALLENGE</h2>
+      <h2 className="text-xs ">Clips</h2>
       <EnConstruccion />
     </>
   );
